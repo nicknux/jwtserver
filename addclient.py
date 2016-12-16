@@ -44,7 +44,7 @@ Get Salt
 if args.salt == None:
     encsalt = bcrypt.gensalt(4)
 else:
-    salt = base64.standard_b64encode(bytes(args.salt, 'utf-8')).decode('utf-8')
+    salt = args.salt
     encsalt = bytes("$2a$12$%s" % salt, 'utf-8')
 
 """

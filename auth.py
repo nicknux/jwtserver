@@ -19,8 +19,7 @@ service_dbengine = DbConfiguration.getengine(
 def authenticate():
     body = request.data.decode('utf-8')
     creds = json.loads(body)
-    pwd = base64.standard_b64encode(
-        hashlib.sha256(bytes(creds['client_secret'], 'utf-8')).digest())
+    pwd = bytes(creds['client_secret'], 'utf-8')
     current_config = loader.ConfigLoader().current()
     config_salt = current_config['salt']
 

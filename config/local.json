@@ -1,13 +1,13 @@
 {
-	"salt": "ZWMxZTRhZmQtOWVmYS00N2NkLWJmNzYtYTBkODhjYTYyNjFm",
+	"salt": "ZWMxZTRhZmQtOWVmYS00NuwIb1x1qgDEYteDUp",
 	"token_expiration_minutes": 120,
 	"issuer": "jwtserver.1.00",
 	"databases": {
 		"jwtserver": {
-			"db_url": "mysql+mysqlconnector://root@127.0.0.1/jwtserver",			
+			"db_url": "mysql+mysqlconnector://root@127.0.0.1/jwtserver",
 			"pool": {
 				"pool_size": 10
-			}			
+			}
 		}
 	}
 }
